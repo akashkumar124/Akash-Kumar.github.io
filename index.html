@@ -8,6 +8,12 @@
     <title>Akash Kumar</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/42b0232921.js" crossorigin="anonymous"></script>
+    <!-- Prepare a container for your calendar. -->
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
 </head>
 <body>
 
@@ -65,7 +71,7 @@
                             <div class="project__logos">
                                 <div class="logo-p">
                                     <img
-                                    src="images/HTML5_Logo_512.png"
+                                    src="https://t0.gstatic.com/images?q=tbn:ANd9GcQD1k77tPTjCjLl6PmKXMXvusiYddlOxT9fw4Q5judKllbm3CPb"
                                     class="project__logo"
                                     alt=""
                                     style="background-color: white; border-radius: 12px"
@@ -73,7 +79,7 @@
                                 </div>
                                 <div class="logo-p">
                                     <img
-                                    src="images/css-3-logo-png-transparent.png"
+                                    src="images/Css-1.jpg"
                                     class="project__logo"
                                     alt=""
                                     style="background-color: white; border-radius: 12px"
@@ -91,7 +97,7 @@
                                 </div>
                                 <div class="logo-p">
                                     <img
-                                    src="images/Java-PNG-Clipart.png"
+                                    src="images/Java_(programming_language)-Logo.wine.png"
                                     class="project__logo"
                                     alt=""
                                     style="background-color: white; border-radius: 12px"
@@ -190,7 +196,47 @@
     </div>
 
 
-    <!-- contact -->
+    
+
+        <!-- Github -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Github Analytics</h1>
+                <div class="services-list">
+                    <div>
+                        
+                        <img src="https://github-readme-stats.vercel.app/api?username=akashkumar124&theme=buefy&show_icons=true" alt="">
+                        
+                    </div>
+                    <div>
+                        
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=akashkumar124&theme=buefy&layout=compact" alt="">
+                    </div>
+                    
+    
+                </div>
+            </div>
+        </div> 
+
+        <!-- <div class="section" id="github">
+            <div class="container cc-experience">
+              <div class="h4 text-center mb-4 title">Github Analytics</div>
+              <div class="card p-4">
+                <div class="row-1">
+                  <div class="col-md-6-1" >
+                    <img src="https://github-readme-stats.vercel.app/api?username=akashkumar124&theme=buefy&show_icons=true" alt="">
+                  </div>
+                  <div class="col-md-6-2">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=akashkumar124&theme=buefy&layout=compact" alt="">
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  -->
+
+
+          <!-- contact -->
     <div id="contact">
         <div class="container" >
             <div class="row">
@@ -282,3 +328,16 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script>
+    GitHubCalendar(".calendar", "akashkumar124");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "akashkumar124", { responsive: true });
+
+    // Use a proxy
+    // GitHubCalendar(".calendar", "akashkumar124", {
+    //    proxy (akashkumar124) {
+    //      return fetch(`https://your-proxy.com/github?user=${akashkumar124}`)
+    //    }
+    // }).then(r => r.text())
+</script>

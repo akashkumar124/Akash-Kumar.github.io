@@ -8,12 +8,8 @@
     <title>Akash Kumar</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/42b0232921.js" crossorigin="anonymous"></script>
-    <!-- Prepare a container for your calendar. -->
-<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
-</script>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <link rel="stylesheet" href="https://aniket427.github.io/github-calendar-responsive.css" />
+   
 </head>
 <body>
 
@@ -24,8 +20,8 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#portfolio">Project</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                     
@@ -60,12 +56,12 @@
                         
                     </p>
                     <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                        <!-- <p class="tab-links active-link" onclick="opentab('skill')">Skills</p> -->
+                        <p class="tab-links active-link" onclick="opentab('experince')">Experince</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
 
                     </div>
-                    <div class="tab-contents active-tab" id="skill">
+                    <!-- <div class="tab-contents active-tab" id="skill">
                         <div class="image-row">
                             <h2>Skills</h2>
                             <div class="project__logos">
@@ -124,8 +120,10 @@
                             </div>
                             
                         </div>
-                    </div>
-                    <div class="tab-contents" id="experince">
+                    </div> -->
+
+
+                    <div class="tab-contents active-tab" id="experince">
                         <ul>
                             <li><span>Zenbi Eventures Private Limited Company</span><br><br> This Company deal with Sublimation machine and am handling Managing
                                 Their Inquiry Data with all seller websites like Amazon, India-mart.
@@ -151,6 +149,54 @@
     </div>
 
 
+    <!-- TechSkill -->
+    <div class="frame" id="skills">
+      <h4 class="title">Tech Stack</h4>
+      <div id="techStacks">
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/html.svg" alt=""></div>
+              <div class="tech-card-name">HTML</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/css.svg" alt=""></div>
+              <div class="tech-card-name">CSS</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/java.png" alt=""></div>
+              <div class="tech-card-name">Java</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/MySQL-Logo.png" alt=""
+                      style="margin-top:30px"></div>
+              <div class="tech-card-name">MySQL</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/springboot.png" alt=""></div>
+              <div class="tech-card-name">Spring Boot</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/hibernate_icon_whitebkg.svg" alt=""></div>
+              <div class="tech-card-name">Hibernate</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/js-logo-1.webp" alt=""></div>
+              <div class="tech-card-name">JavaScript</div>
+          </div>
+
+          <div class="tech-card">
+              <div class="tech-card-logo"><img src="./images/git.png" alt=""></div>
+              <div class="tech-card-name">Git</div>
+          </div>
+      </div>
+  </div>
+
+
 
 
 
@@ -158,7 +204,7 @@
 
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Project</h1>
+            <h1 class="title">My Project</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/hiver.jpg" alt="">
@@ -201,7 +247,7 @@
         <!-- Github -->
         <div id="services">
             <div class="container">
-                <h1 class="sub-title">Github Analytics</h1>
+                <h1 class="title">Github Analytics</h1>
                 <div class="services-list">
                     <div>
                         
@@ -217,6 +263,11 @@
                 </div>
             </div>
         </div> 
+
+        <div class="calendar">
+          <!-- Loading stuff -->
+          Loading the data.
+      </div>
 
         <!-- <div class="section" id="github">
             <div class="container cc-experience">
@@ -239,9 +290,11 @@
           <!-- contact -->
     <div id="contact">
         <div class="container" >
+          <h1 class="title sub">Contact Me</h1>
             <div class="row">
+              
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    
                     <p><a href="mailto:akash13041997kumar@gmai.com" target="_blank"><i class="fa-solid fa-envelope"></i></a> akash13041997kumar@gmai.com</p>
                     <p><i class="fa-solid fa-phone"></i> +91 7024435656</p>
                     <div class="socla-icons">
@@ -328,16 +381,8 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  <script>
-    GitHubCalendar(".calendar", "akashkumar124");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "akashkumar124", { responsive: true });
-
-    // Use a proxy
-    // GitHubCalendar(".calendar", "akashkumar124", {
-    //    proxy (akashkumar124) {
-    //      return fetch(`https://your-proxy.com/github?user=${akashkumar124}`)
-    //    }
-    // }).then(r => r.text())
-</script>
+ <script src="https://aniket427.github.io/github-calendar.min.js"></script>
+ <script>
+     
+     GitHubCalendar(".calendar", "akashkumar124", { responsive: true });
+ </script>

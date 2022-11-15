@@ -13,34 +13,52 @@ body{
   background-color: #080808;
   color: white;
 }
+/* .navbar{
+  
+} */
 
 #header{
-  width: 100%;
-  height: 100vh;
+  width: 80%;
+  height: 20vh;
+
+  
+  /* height: 50px; */
+  /* border: 1px solid blue; */
   /* background-image: url(images/background.png); */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  /* background-position: center; */
   /* border: 1px solid red; */
 }
 .container{
   padding: 10px 10%;
+  
+}
+#titile{
+  padding: 30px 0;
+  /* margin-top: 15px; */
+  /* border: 1px solid blue; */
 }
 
 nav{
   display: flex;
+  width: 100%;
+  z-index: 1;
+  background: #262626;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  /* border: 1px solid red; */
 }
 
 .logo{
-  width: 140px;
+  width: 90px;
 }
 
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin:  0px 30px ;
 }
 
 nav ul li a{
@@ -241,16 +259,23 @@ nav ul li a:hover::after{
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 550px;
   /* border: 1px solid red; */
 }
 .work img{
   width: 100%;
-  height: 100%;
+  height: 40%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
 }
+
+.layer1{
+
+margin-top: 10px;
+
+}
+
 .layer{
   width: 100%;
   height: 0;
@@ -271,15 +296,23 @@ nav ul li a:hover::after{
   padding-right: 20px;
 }
 
-.layer h3{
+.layer1 h3{
   font-size: 25px;
   color: #C3073F;
   font-weight: 1000;
   margin-top: 5%;
   
 }
-.layer p{
-  margin-top: 5%;
+.layer1 h4{
+  font-size: 15px;
+  font-weight: bolder;
+  
+  font-weight: 1000;
+  margin-top: 3%;
+  
+}
+.layer1 p{
+  margin-top: 2%;
   text-align: left;
 }
 .layer a{
@@ -300,6 +333,14 @@ nav ul li a:hover::after{
 .work:hover .layer{
   height: 100%;
 }
+
+.btn-1{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .btn{
   display: block;
   margin: 50px auto;
@@ -504,20 +545,22 @@ nav .fas{
   .layer p{
       font-size: 13px;
   }
-  /* .work{
+  
+  .work{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-    border: 1px solid red;
+    /* position: relative; */
+    /* overflow: hidden;
+    
+    border: 1px solid red; */
+    height: 600px;
   }
   .work img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-  } */
+    /* display: block; */
+    /* transition: transform 0.5s; */
+  }
   /* .calendar{
     border: 1px solid red;
   } */

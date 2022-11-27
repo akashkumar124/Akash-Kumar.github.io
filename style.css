@@ -252,14 +252,14 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 70px;
   /* border: 1px solid red; */
 }
 .work{
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  height: 550px;
+  height: 600px;
   /* border: 1px solid red; */
 }
 .work img{
@@ -314,6 +314,7 @@ margin-top: 10px;
 .layer1 p{
   margin-top: 2%;
   text-align: left;
+  font-size: 15px;
 }
 .layer a{
   margin-top: 10px;
@@ -481,6 +482,19 @@ nav .fas{
   }
   .header-text h1{
       font-size: 30px;
+  }
+
+  .layer1 h3{
+    font-size: 15px;
+    color: #C3073F;
+    font-weight: 1000;
+    margin-top: 5%;
+    
+  }
+  .layer1 p{
+    margin-top: 2%;
+    text-align: left;
+    font-size: 12px;
   }
 
   nav .fas{

@@ -608,11 +608,11 @@ nav .fas{
     grid-template-columns: repeat(1,1fr);
     grid-gap: 10px;
     margin-top: 50px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
   }
   .anal{
     margin-bottom: 10px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   .tech-card-logo {

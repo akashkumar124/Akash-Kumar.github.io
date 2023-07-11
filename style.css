@@ -50,6 +50,15 @@ nav{
   position: fixed;
   /* border: 1px solid red; */
 }
+.exp-name{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.exp-name img{
+  height: 40px;
+}
 
 .logo{
   width: 90px;
@@ -585,6 +594,8 @@ nav .fas{
   .layer p{
       font-size: 13px;
   }
+
+
   
   .work{
     border-radius: 10px;

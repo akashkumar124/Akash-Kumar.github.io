@@ -18,7 +18,7 @@ Welcome to my portfolio! This repository contains a collection of web developmen
 
 <li>- HTML</li>
 <li>- CSS</li>
-<li>- JavaScript/<li>
+<li>- JavaScript<li>
 
 
 ## Usage
